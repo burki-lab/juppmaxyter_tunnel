@@ -1,9 +1,18 @@
 #!/bin/bash
 
+
 # (A) as a first step we load the yaml reader and read the
 # config file (~/config.yml) into $config_<...>
-. ../yaml_reader/parse_yaml.sh
+cd $(dirname $0)
+
+# clone yaml parsing script from github
+YAML_PARSER="../yaml_reader/parse_yaml.sh"
+[[ ! -f "$YAML_PARSER" ]] && ../yaml_reader/init.sh
+
+# load it
+. $YAML_PARSER
 eval `parse_yaml ../config.yml "config_"`
+
 
 # (B) we load the input variables and commands
 # jobname is always jupyter to enable simple cancel
@@ -22,6 +31,7 @@ LOGFILE="$config_server_outputdir/@A.log"
 # mail info
 MAIL_ADD=$config_mail_address
 MAIL_TYPE=$config_mail_type
+
 
 # (C) building the main command 
 # jupyter connection settings
