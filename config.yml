@@ -1,3 +1,4 @@
+# SERVER PART - ADJUST IN config.yml ON SERVER
 # here one can set info about server
 server:
   name: rackham
@@ -19,6 +20,12 @@ mail:
   address: MOCK
   type: NONE
 
+# define the source directory of the jupyter notebook
+jupyter:
+  base: MOCK
+
+
+# LOCAL PART - ADJUST IN config.yml ON LOCAL COMPUTER
 # info about the local computer
 local:
   logdir: MOCK
