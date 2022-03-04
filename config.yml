@@ -19,4 +19,5 @@ mail:
 
 # info about the local computer
 local:
-  logdir: MOCK 
+  logdir: MOCK
+  port: "8844" 
