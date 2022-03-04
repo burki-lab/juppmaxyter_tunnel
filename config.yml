@@ -17,4 +17,6 @@ mail:
   address: MOCK
   type: NONE
 
-
+# info about the local computer
+local:
+  logdir: MOCK 
