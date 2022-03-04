@@ -1,0 +1,20 @@
+# here one can set info about server
+server:
+  name: rackham
+  project: MOCK
+  coretype: core
+  numcores: 1
+  duration: "00-08:00:00"
+  outputdir: MOCK
+
+# information about ip host and port used
+connection:
+  ip: "0.0.0.0"
+  port: "8844"
+
+# mail settings for slurm
+mail:
+  address: MOCK
+  type: NONE
+
+
