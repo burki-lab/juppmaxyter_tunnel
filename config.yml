@@ -6,7 +6,9 @@ server:
   numcores: 1
   duration: "00-08:00:00"
   outputdir: MOCK
-
+  loginname: MOCK
+  loginaddress: MOCK
+  
 # information about ip host and port used
 connection:
   ip: "0.0.0.0"
