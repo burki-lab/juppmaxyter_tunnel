@@ -26,7 +26,7 @@ SERVER=$config_server_name
 
 # jobinfo
 DURATION=$config_server_duration
-LOGFILE="$config_server_outputdir/@A.log"
+LOGFILE="$config_server_outputdir/%A.log"
 
 # mail info
 MAIL_ADD=$config_mail_address
@@ -43,5 +43,7 @@ CMD="jupyter lab --no-browser --ip=$IP --port=$PORT"
 
 
 # (D) finally submit the job
+BASEDIR=$config_jupyter_base
+cd $BASEDIR
 
-echo "sbatch -J $JOBNAME -A $PROJECT -M $SERVER -p $CORE_TYPE -n $NUM_CORES -t $DURATION -o $LOGFILE --mail-user $MAIL_ADD --mail-type $MAIL_TYPE $CMD"
+sbatch -J $JOBNAME -A $PROJECT -M $SERVER -p $CORE_TYPE -n $NUM_CORES -t $DURATION -o $LOGFILE --mail-user $MAIL_ADD --mail-type $MAIL_TYPE $CMD
