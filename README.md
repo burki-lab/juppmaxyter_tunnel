@@ -40,12 +40,12 @@ To save compuation hours always remember to cancel the Jobs and delete the logs.
 # Practicality
 To increase the usefullness of `juppmaxyter_tunnel`, one could add aliases to the shell source file (e.g. by using `vim ~/.bashrc` and adding new the alias lines) for fast and simple access:
 - `SERVER`:
-- - for changing of configs `alias jupchange=vim <ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/config.yml`
-- - for starting jobs `alias jupy=<ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/src/start_jupy_job.sh`
-- - for cancelling all jobs `alias jupterm=<ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/src/cancel_jupyter_jobs.sh`
+- - for changing of configs `alias 'jupchange=vim <ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/config.yml'`
+- - for starting jobs `alias 'jupy=<ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/src/start_jupy_job.sh'`
+- - for cancelling all jobs `alias 'jupterm=<ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/src/cancel_jupyter_jobs.sh'`
 
 - `LOCAL`:
-- - for changing of configs `alias jupchange=vim <ABSPATH_JUPPMAXYTER_TUNNEL_LOCAL>/config.yml`
-- - for starting the tunnel `alias juptunnel=<ABSPATH_JUPPMAXYTER_TUNNEL_LOCAL>/src/copy_logs_via_ssh.sh`
+- - for changing of configs `alias 'jupchange=vim <ABSPATH_JUPPMAXYTER_TUNNEL_LOCAL>/config.yml'`
+- - for starting the tunnel `alias 'juptunnel=<ABSPATH_JUPPMAXYTER_TUNNEL_LOCAL>/src/copy_logs_via_ssh.sh'`
 
 
