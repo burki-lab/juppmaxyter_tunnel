@@ -19,7 +19,7 @@ Follow the next steps to start Jupyterlab on computation nodes of SLURM server.
 In `config.yml` you should store your specific configurations on the server, as well as on your local computer.
 Set up the file on one of the computation units (e.g. server) and copy its content to the other one (hence, the local computer).
 
-## SERVER: Start the job on the server.
+## Start the job on the server - `SERVER`
 After configuration, run `src/start_jupy_job.sh` on the server. This will submit a job using your configurations to start JupyterLab on a computation node.
 
 ## Wait until job is started ... - `SERVER`
