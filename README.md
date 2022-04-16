@@ -42,7 +42,7 @@ To increase the usefullness of `juppmaxyter_tunnel`, one could add aliases to th
 - `SERVER`:
 - - for changing of configs `jupchange=vim <ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/config.yml`
 - - for starting jobs `alias jupy=<ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/src/start_jupy_job.sh`
-- for cancelling all jobs `alias jupterm=<ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/src/cancel_jupyter_jobs.sh`
+- - for cancelling all jobs `alias jupterm=<ABSPATH_JUPPMAXYTER_TUNNEL_SERVER>/src/cancel_jupyter_jobs.sh`
 
 - `LOCAL`:
 - - for changing of configs `jupchange=vim <ABSPATH_JUPPMAXYTER_TUNNEL_LOCAL>/config.yml`
